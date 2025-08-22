@@ -1,0 +1,17 @@
+# Core libraries
+streamlit
+pandas
+numpy
+requests
+dnspython
+
+# Email handling
+yagmail           # for sending emails easily
+oauth2client      # for Gmail OAuth2 support
+
+# Database
+mysql-connector-python  # for MySQL database interaction
+sqlalchemy               # for ORM and database interaction
+
+# Date/time utilities
+python-dateutil   # for robust datetime parsing
