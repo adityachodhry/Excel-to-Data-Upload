@@ -38,6 +38,8 @@ def clean_column_names(df, table_name):
             col = col.replace("&", "and")
             col = col.replace("imp/exp", "imp_exp")
             col = col.replace("imp/ exp", "imp_exp")
+            col = col.replace("Tax Invoice to Client", "Tax_Invoice_to_Client")
+            col = col.replace("Docs Sent to customer", "Docs_Sent_to_Customer")
 
             # Replace whole words "from" and "to" safely
             col = re.sub(r'\bfrom\b', 'pick_up_from', col, flags=re.IGNORECASE)
