@@ -4,6 +4,7 @@ pandas
 numpy
 requests
 dnspython
+openpyxl
 
 # Email handling
 yagmail           # for sending emails easily
