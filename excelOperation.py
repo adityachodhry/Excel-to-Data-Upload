@@ -15,7 +15,7 @@ engine = create_engine(f"mysql+mysqlconnector://{db_user}:{db_password}@{db_host
 
 # ----------------- COLUMN CLEAN FUNCTION -----------------
 def clean_column_names(df, table_name):
-    target_tables = ["SeaExport_Actual", "SeaExport_Planned", "SeaImport_Actual", "SeaImport_Planned"]
+    target_tables = ["SeaExport_Actual", "SeaExport_Planned", "SeaImport_Actual", "SeaImport_Planned", "AirExport_Actual", "AirExport_Planned", "AirImport_Actual", "AirImport_Planned"]
 
     if table_name in target_tables:
         new_columns = []
