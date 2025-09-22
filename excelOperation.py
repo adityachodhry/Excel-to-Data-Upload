@@ -42,6 +42,8 @@ def clean_column_names(df, table_name):
             col = col.replace("Docs Sent to customer", "Docs_Sent_to_Customer")
             col = col.replace("Billing to customer", "Billing_to_customer")
             col = col.replace("Cargo Handover to Airlines", "Cargo_Handover_to_Airlines")
+            col = col.replace("Pick up Date at Origin", "Pick_up_Date_at_Origin")
+            col = col.replace("Console / IGM Filing", "Console_IGM_Filing")
 
             # Replace whole words "from" and "to" safely
             col = re.sub(r'\bfrom\b', 'pick_up_from', col, flags=re.IGNORECASE)
